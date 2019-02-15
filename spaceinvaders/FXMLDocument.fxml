@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="pane" onMouseClicked="#onMouseClick" onMouseMoved="#onMouseMove" prefHeight="582.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceinvaders.FXMLDocumentController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="76.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="755.0" />
+      <Label fx:id="statusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="217.0" layoutY="506.0" prefHeight="76.0" prefWidth="321.0" text="In Game!" textFill="#e5ff00">
+         <font>
+            <Font name="Eras Bold ITC" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="life1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="6.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+      <Rectangle fx:id="life2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="88.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+      <Rectangle fx:id="life3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="76.0" layoutX="170.0" layoutY="506.0" stroke="BLACK" strokeType="INSIDE" width="82.0" />
+      <Label fx:id="statusLabel1" alignment="CENTER" contentDisplay="CENTER" layoutX="550.0" layoutY="506.0" prefHeight="76.0" prefWidth="123.0" text="Score: " textFill="#0b00ff">
+         <font>
+            <Font name="Eras Bold ITC" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="scoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="659.0" layoutY="506.0" prefHeight="76.0" prefWidth="82.0" text="0" textFill="#0fae00">
+         <font>
+            <Font name="Eras Bold ITC" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

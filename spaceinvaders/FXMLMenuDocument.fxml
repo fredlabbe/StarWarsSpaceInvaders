@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="500.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spaceinvaders.FXMLMenuDocumentController">
+    <stylesheets>
+        <URL value="@/spaceinvaders/fxmlmenudocument.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="14.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleButtonAction" style="-fx-background-color: transparent;" stylesheets="@fxmlmenudocument.css" text="New Game" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="48.0" />
+         </font>
+      </Button>
+      <Button fx:id="quitButton" layoutX="344.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleQuit" prefHeight="95.0" prefWidth="180.0" style="-fx-background-color: transparent;" stylesheets="@fxmlmenudocument.css" text="Quit" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="48.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
